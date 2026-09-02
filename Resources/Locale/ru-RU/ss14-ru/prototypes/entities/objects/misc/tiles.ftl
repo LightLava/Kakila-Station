@@ -235,7 +235,7 @@ ent-FloorTileItemXeno = ксенопол
 ent-FloorTileItemDarkSquiggly = тёмная волнистая стальная плитка
     .desc = { ent-FloorTileItemDark.desc }
 
-ent-FloorTileItemIronsandConcreteSmooth = гладкий железобетонный пол
+ent-FloorTileItemIronsandConcreteSmooth = гладкая железобетонная плитка
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemIronsandConcreteMono = монолитная железобетонная плитка
     .desc = { ent-FloorTileItemBase.desc }
