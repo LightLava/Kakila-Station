@@ -1,5 +1,5 @@
 ent-FloorTileItemBase = { ent-BaseItem }
-    .desc = Может послужить неплохим метательным оружием.
+    .desc = Подходит для покрытия полов.
 ent-FloorTileItemSteel = стальная плитка
     .desc = { ent-FloorTileItemBase.desc }
 ent-FloorTileItemSteelCheckerDark = тёмная стальная плитка шашечками
@@ -234,3 +234,8 @@ ent-FloorTileItemXeno = ксенопол
 
 ent-FloorTileItemDarkSquiggly = тёмная волнистая стальная плитка
     .desc = { ent-FloorTileItemDark.desc }
+
+ent-FloorTileItemIronsandConcreteSmooth = гладкий железобетонный пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemIronsandConcreteMono = монолитная железобетонная плитка
+    .desc = { ent-FloorTileItemBase.desc }
