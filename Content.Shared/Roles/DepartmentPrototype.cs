@@ -13,7 +13,7 @@ public sealed partial class DepartmentPrototype : IPrototype
     /// <summary>
     /// Имя сеттинга, к которому принадлежит доДепАртамент
     /// </summary>
-    [DataField(required: true)]
+    [DataField]
     public string Setting = "SS14";
 
     /// <summary>
