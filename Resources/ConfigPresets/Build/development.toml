@@ -1,31 +1,31 @@
+[net]
+tickrate = 30
+
+[netres]
+limit = 25.0
+
+[viewport]
+maximum_width = 26
+
 [game]
-map = "CorvaxPacked"
-role_timers = false
-admin_job_tracking = true
-role_loadout_timers = false
+lobbyduration = 240
+map_pool = "CorvaxMapPool"
+round_restart_time = 120
 fallbackpreset = "secret"
 defaultpreset = "secret"
-hostname = "Какила Стейшен | Играем метакомпашкой, теперь на губках"
-lobbyenabled = true
 
 [events]
-enabled = false
+enabled = true
 
-[ghost]
-role_time = 0.5
-quick_lottery = true
+[admin]
+see_own_notes = true
+admins_count_in_playercount = true
 
-[gateway]
-generator_enabled = false
+[contraband]
+icons_enabled = true
 
-[movement]
-mob_pushing = true
-
-[salvage]
-expedition_cooldown = 45.0
-
-[auth]
-mode = 1
+[misc]
+space_whale_spawn = false
 
 [lavaland]
 enabled = true

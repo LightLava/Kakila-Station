@@ -1004,6 +1004,7 @@ namespace Content.Client.Lobby.UI
                 settings.Add(setting);
             }
 
+            settings.Sort(SettingUIComparer.Instance);
             departments.Sort(DepartmentUIComparer.Instance);
 
             var items = new[]
