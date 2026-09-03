@@ -1,2 +1,2 @@
-ent-FloorTileItemCanvas = canvas floor
+ent-FloorTileItemCanvas = холщовый пол
     .desc = { ent-FloorTileItemBase.desc }
