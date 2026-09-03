@@ -1,0 +1,11 @@
+- type: aQSettingPrototype
+  id: SS14
+  name: "Space Station 14"
+
+- type: aQSettingPrototype
+  id: OS14
+  name: "Orbital Station 14"
+
+- type: aQSettingPrototype
+  id: EP
+  name: "Elysium Prime"
