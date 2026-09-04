@@ -994,13 +994,6 @@ namespace Content.Client.Lobby.UI
 
             departments.Sort(DepartmentUIComparer.Instance);
 
-            JobList.AddChild(new Label
-            {
-                Text = "SS14",
-                Margin = new Thickness(0, 15, 0, 0),
-                StyleClasses = { StyleClass.LabelHeading },
-            });
-
             var items = new[]
             {
                 ("humanoid-profile-editor-job-priority-never-button", (int) JobPriority.Never),
