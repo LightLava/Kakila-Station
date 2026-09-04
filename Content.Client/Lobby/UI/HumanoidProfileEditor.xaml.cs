@@ -1006,6 +1006,13 @@ namespace Content.Client.Lobby.UI
 
             departments.Sort(DepartmentUIComparer.Instance);
 
+            JobList.AddChild(new Label
+            {
+                Text = "SS14",
+                Margin = new Thickness(0, 15, 0, 0),
+                StyleClasses = { StyleClass.LabelHeading },
+            });
+
             var items = new[]
             {
                 ("humanoid-profile-editor-job-priority-never-button", (int) JobPriority.Never),
@@ -1026,19 +1033,12 @@ namespace Content.Client.Lobby.UI
                         Name = setting.ID,
                     };
 
-                    settingCategory.AddChild(new PanelContainer
+                    settingCategory.AddChild(new Label
                     {
-                        PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#464966") },
-                        Children =
-                        {
-                            new Label
-                            {
-                                Text = Loc.GetString(setting.Name),
-                                FontColorOverride = Color.Red,
-                                Margin = new Thickness(0, 10, 0, 0),
-                                StyleClasses = { StyleClass.LabelHeading },
-                            }
-                        }
+                        Text = Loc.GetString(setting.Name),
+                        FontColorOverride = Color.Red,
+                        Margin = new Thickness(0, 10, 0, 0),
+                        StyleClasses = { StyleClass.LabelHeading },
                     });
 
                     _settingsCategories[setting.ID] = settingCategory;
@@ -1088,7 +1088,7 @@ namespace Content.Client.Lobby.UI
                     });
 
                     _jobCategories[department.ID] = category;
-                    _settingsCategories[department.Setting].AddChild(category);
+                    JobList.AddChild(_settingsCategories[department.Setting]);
                 }
 
                 var jobs = department.Roles.Select(jobId => _prototypeManager.Index(jobId))
