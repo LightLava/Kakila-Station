@@ -1,7 +1,5 @@
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 - type: entity
-  parent: BaseItem
+  parent: [ BaseItem, BaseItemDestructible ]
   id: LogicEmptyCircuit
   name: empty circuit
   description: Something seems to be missing.
@@ -12,7 +10,6 @@
     layers:
     - state: base
   - type: Anchorable
-  - type: Rotatable
   - type: Construction
     graph: LogicGate
     node: empty

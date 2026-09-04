@@ -691,17 +691,14 @@
     - !type:TileNotBlocked
 
 - type: construction
+  parent: BaseFurniture
   id: NoticeBoard
-  graph: NoticeBoard
-  startNode: start
+  graph: WallBoard
   targetNode: noticeBoard
-  category: construction-category-furniture
-  objectType: Structure
-  placementMode: SnapgridCenter
   canRotate: true
   canBuildInImpassable: true
   conditions:
-    - !type:WallmountCondition
+  - !type:WallmountCondition
 
 - type: construction
   id: Mannequin

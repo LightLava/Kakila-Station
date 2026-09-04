@@ -1,8 +1,6 @@
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 - type: entity
   name: hydroponics tray
-  parent: [ hydroponicsSoil, SmallConstructibleMachine]
+  parent: [ BaseHydroponicsSoil, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible]
   id: hydroponicsTray
   description: An interstellar-grade space farmplot allowing for rapid growth and selective breeding of crops. Just... keep in mind the space weeds.
   components:
@@ -80,17 +78,11 @@
         !type:DamageTrigger
         damage: 100
       behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: machineFrame
       - !type:PlaySoundBehavior
         sound:
           collection: MetalGlassBreak
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Machine
     board: HydroponicsTrayMachineCircuitboard
-  - type: TTS # CorvaxGoob-TTS
-    voice: TrainingRobot
   - type: WiresPanel
   - type: AmbientSound
     volume: -9
@@ -110,5 +102,3 @@
   - type: PlantHolder
     waterLevel: 0
     nutritionLevel: 0
-    # for the lights to update immediately
-    updateSpriteAfterUpdate: true

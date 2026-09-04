@@ -1,19 +1,9 @@
-# SPDX-License-Identifier: AGPL-3.0-or-later
 #Blast door
 
 - type: entity
   parent: BlastDoor
   id: BlastDoorCentralCommand
   suffix: Central Command, Locked
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsCentralCommand ]
-      
-- type: entity
-  parent: BlastDoorOpen
-  id: BlastDoorOpenCentralCommand
-  suffix: Open, Central Command, Locked
   components:
   - type: ContainerFill
     containers:

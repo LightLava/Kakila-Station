@@ -1,8 +1,6 @@
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
-- type: entity
+﻿- type: entity
+  parent: [ BaseStructure, StructureHealthDoor ]
   id: Airlock
-  parent: BaseStructure
   name: airlock
   description: It opens, it closes, and maybe crushes you.
   components:
@@ -18,24 +16,28 @@
           "/Audio/Weapons/smash.ogg"
   - type: InteractionOutline
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/basic.rsi
-    snapCardinals: true
+    sprite: Structures/Doors/Airlocks/Standard/airlock-base.rsi
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
     - state: closed_unlit
       shader: unshaded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
       map: ["enum.DoorVisualLayers.BaseUnlit"]
-      visible: false
+      visible: true
     - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
       map: ["enum.WeldableLayers.BaseWelded"]
     - state: bolted_unlit
       shader: unshaded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
       map: ["enum.DoorVisualLayers.BaseBolted"]
     - state: emergency_unlit
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
       map: ["enum.DoorVisualLayers.BaseEmergencyAccess"]
       shader: unshaded
     - state: panel_open
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
     - state: electrified_ai
       sprite: Interface/Misc/ai_hud.rsi
@@ -48,9 +50,15 @@
       visible: false
       map: ["enum.ElectrifiedLayers.Sparks"]
     - state: sparks
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
       map: ["enum.DoorVisualLayers.BaseEmagging"]
       shader: unshaded
       visible: false
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - woods
+    mode: NoSprite
   - type: AnimationPlayer
   - type: Physics
   - type: Fixtures
@@ -89,10 +97,16 @@
     fuel: 5
     time: 3
   - type: Airlock
-    openUnlitVisible: true # CorvaxGoob-Resprite-Airlocks
+    openUnlitVisible: true
   - type: NavMapDoor
   - type: DoorBolt
   - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ElectrifiedVisuals.ShowSparks:
+        enum.ElectrifiedLayers.Sparks:
+          True: { visible: True }
+          False: { visible: False }
   - type: WiresVisuals
   - type: ElectrocutionHUDVisuals
   - type: ApcPowerReceiver
@@ -101,6 +115,7 @@
   - type: Electrified
     enabled: false
     usesApcPower: true
+    onActivateInWorld: true
   - type: WiresPanel
   - type: WiresPanelSecurity
   - type: Wires
@@ -137,9 +152,13 @@
   - type: RadiationBlocker
     resistance: 3
   - type: Occluder
+    polygon:
+    - "-0.5, 0.5"
+    - "0.5, 0.5"
+    - "0.5, -0.5"
+    - "-0.5, -0.5"
   - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: StrongMetallic
+    damageModifierSet: SteelMod
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -148,31 +167,12 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 500
+        damage: 200
       behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      # TODO this should go to the broken node first  < Solved but left wizden comment
+      # TODO this should go to the broken node first
       - !type:PlaySoundBehavior
         sound:
           collection: MetalSlam
-    # Goobstart
-    - trigger: !type:DamageTrigger
-        damage: 450
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SheetSteel1:
-            min: 0
-            max: 2
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-      - !type:ChangeConstructionNodeBehavior
-        node: assembly
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-    # Goobend
   - type: Construction
     graph: Airlock
     node: airlock
@@ -180,9 +180,6 @@
     - board
   - type: PlacementReplacement
     key: walls
-  - type: IconSmooth # CorvaxGoob-Resprites
-    key: walls
-    mode: NoSprite
   - type: Paintable
     group: AirlockStandard
   - type: StaticPrice
@@ -193,13 +190,10 @@
     tags:
       - Airlock
       # This tag is used to nagivate the Airlock construction graph. It's needed because the construction graph is shared between Airlock, AirlockGlass, and HighSecDoor
+      - DoorRemoteWhitelist
+      # This tag is used by door remotes to allow or not a door remote to normally be able to interact with a door
   - type: PryUnpowered
   - type: BlockWeather
-  - type: GuideHelp
-    guides:
-    - Airlocks
-    - WirePanels
-    - Networking
   - type: Penetratable # Goobstation - Better snipers
     penetrateDamage: 75
     damagePenalty: 0.2
@@ -208,6 +202,11 @@
     - KnockOn
   - type: WeldingSparksAnimation # Goobstation
     startingOffset: 0, 0.5
+  - type: GuideHelp
+    guides:
+    - Airlocks
+    - WirePanels
+    - Networking
   placement:
     mode: SnapgridCenter
 
@@ -233,7 +232,7 @@
   - type: Occluder
     enabled: false
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/glass.rsi
+    sprite: Structures/Doors/Airlocks/Glass/airlock-base.rsi
   - type: AnimationPlayer
   - type: Fixtures
     fixtures:
@@ -256,9 +255,13 @@
     resistance: 2
   - type: Paintable
     group: AirlockGlass
-  #- type: RadiationBlocker
-  #  resistance: 2
+    resistance: 2
   - type: Tag
     tags:
       - GlassAirlock
       # This tag is used to nagivate the Airlock construction graph. It's needed because the construction graph is shared between Airlock, AirlockGlass, and HighSecDoor
+      - DoorRemoteWhitelist
+      # This tag is used by door remotes to allow or not a door remote to normally be able to interact with a door
+
+- type: Tag
+  id: DoorRemoteWhitelist

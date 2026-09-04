@@ -1311,6 +1311,10 @@
   parent: BaseStationTile
   name: tiles-green-circuit-floor
   sprite: /Textures/Tiles/green_circuit.png
+  variants: 2
+  placementVariants:
+  - 0.8
+  - 0.0166
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemGCircuit
@@ -1321,6 +1325,10 @@
   parent: BaseStationTile
   name: tiles-blue-circuit-floor
   sprite: /Textures/Tiles/blue_circuit.png
+  variants: 2
+  placementVariants:
+  - 0.8
+  - 0.0166
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemBCircuit
@@ -1331,6 +1339,10 @@
   parent: BaseStationTile
   name: tiles-red-circuit-floor
   sprite: /Textures/Tiles/red_circuit.png
+  variants: 2
+  placementVariants:
+  - 0.8
+  - 0.0166
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemRCircuit
@@ -1755,12 +1767,6 @@
   parent: BaseStationTile
   name: tiles-wood2
   sprite: /Textures/Tiles/wood_tile.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
   footstepSounds:
     collection: FootstepWood
   barestepSounds:
@@ -1912,6 +1918,12 @@
   parent: BaseStationTile
   name: tiles-astro-ice
   sprite: /Textures/Tiles/Planet/Snow/ice.png
+  variants: 4
+  placementVariants:
+  - 0.8
+  - 0.0166
+  - 0.0166
+  - 0.0166
   friction: 0.05
   mobFriction: 0.05
   mobAcceleration: 0.1

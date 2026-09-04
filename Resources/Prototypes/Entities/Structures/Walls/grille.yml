@@ -119,10 +119,10 @@
   - type: Sprite
     drawdepth: Walls
     sprite: Structures/Walls/grille.rsi
-    state: grille_broken
+    state: broken
   - type: Icon
     sprite: Structures/Walls/grille.rsi
-    state: grille_broken
+    state: broken
   - type: RCDDeconstructable
     cost: 6
     delay: 4

@@ -116,6 +116,9 @@
             "name": "cryogenics"
         },
         {
+            "name": "corvax_newyear"
+        },
+        {
             "name": "danger"
         },
         {
@@ -519,21 +522,6 @@
         },
         {
             "name": "ntmining"
-        },
-        {
-            "name": "corvax_newyear",
-            "delays": [
-                [
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2
-                ]
-            ]
         }
     ]
 }

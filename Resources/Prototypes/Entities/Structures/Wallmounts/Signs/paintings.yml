@@ -1,7 +1,5 @@
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 - type: entity
-  parent: BaseSign
+  parent: BaseSignWeak
   id: PaintingBase
   abstract: true
   components:

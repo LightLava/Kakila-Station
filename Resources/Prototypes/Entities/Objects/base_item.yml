@@ -63,6 +63,21 @@
   - type: DamageExaminable
 
 - type: entity
+  abstract: true
+  id: BaseItemDestructible # Should be replaced by a variety of destruction bases, possibly combined with drink_base_materials.yml
+  components:
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
   name: "storage item"
   id: BaseStorageItem
   parent: BaseItem

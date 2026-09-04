@@ -29,6 +29,9 @@
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: Construction
+    graph: CobwebsGraph
+    node: start
 
 - type: entity
   id: Cobweb2

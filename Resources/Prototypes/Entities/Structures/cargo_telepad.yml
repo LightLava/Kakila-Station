@@ -1,8 +1,6 @@
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 - type: entity
   id: CargoTelepad
-  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  parent: [ BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible ]
   name: cargo telepad
   description: Beam in the pizzas and dig in.
   components:
@@ -31,9 +29,14 @@
     - state: idle
       map: [ "enum.CargoTelepadLayers.Beam" ]
       shader: unshaded
-  - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: StructuralMetallicStrong
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 175
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice

@@ -18,7 +18,7 @@
     drawdepth: SmallObjects
     sprite: Structures/Wallmounts/switch.rsi
     layers:
-    - state: dead
+    - state: base
     - state: on
       map: ["on"]
       shader: unshaded

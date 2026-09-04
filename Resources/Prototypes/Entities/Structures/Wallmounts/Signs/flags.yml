@@ -1,12 +1,12 @@
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
 - type: entity
-  parent: BaseSign
-  id: BaseFlag
   abstract: true
+  parent: BaseSignWeak
+  id: BaseFlag
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/flags.rsi
+  - type: Damageable
+    damageModifierSet: ThreadMod
 
 - type: entity
   parent: BaseFlag

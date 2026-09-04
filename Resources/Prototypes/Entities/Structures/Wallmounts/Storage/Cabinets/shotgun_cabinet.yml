@@ -1,6 +1,4 @@
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
-- type: entity
+﻿- type: entity
   parent: FireAxeCabinet
   id: ShotGunCabinet
   name: shotgun cabinet
@@ -15,6 +13,9 @@
       visible: true
     - state: glass
       map: ["enum.OpenableVisuals.Layer"]
+    - state: locked
+      shader: unshaded
+      map: ["enum.LockVisualLayers.Lock"]
   - type: ItemSlots
     slots:
       ItemCabinet:

@@ -118,6 +118,12 @@
   id: FloorIce
   name: tiles-ice
   sprite: /Textures/Tiles/Planet/Snow/ice.png
+  variants: 4
+  placementVariants:
+  - 0.8
+  - 0.0166
+  - 0.0166
+  - 0.0166
   isSubfloor: true
   friction: 0.05
   heatCapacity: 10000

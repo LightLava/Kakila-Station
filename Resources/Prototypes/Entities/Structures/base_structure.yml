@@ -1,5 +1,3 @@
-# SPDX-License-Identifier: MIT
-
 - type: entity
   id: BaseStructure
   abstract: true
@@ -40,10 +38,10 @@
   abstract: true
   components:
 # These might/might not be a good idea
-  #  - type: MovedByPressure
-  #  - type: DamageOnHighSpeedImpact
-  #  - type: TileFrictionModifier
-  #    modifier: 0.5
+#  - type: MovedByPressure
+#  - type: DamageOnHighSpeedImpact
+#  - type: TileFrictionModifier
+#    modifier: 0.5
   - type: Transform
     anchored: false
   - type: Clickable

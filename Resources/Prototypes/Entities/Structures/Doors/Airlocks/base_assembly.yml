@@ -1,6 +1,6 @@
-# SPDX-License-Identifier: AGPL-3.0-or-later
 #Base
 - type: entity
+  parent: StructureHealthDoorWeak
   id: AirlockAssembly
   name: airlock assembly
   description: It opens, it closes, and maybe crushes you.
@@ -8,7 +8,7 @@
   - type: Clickable
   - type: InteractionOutline
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/basic.rsi
+    sprite: Structures/Doors/Airlocks/Standard/airlock-base.rsi
     state: "assembly"
   - type: Physics
   - type: Fixtures
@@ -29,8 +29,7 @@
     anchored: true
     noRot: true
   - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: StructuralMetallic #Goob edit, was StructuralMetallicStrong
+    damageModifierSet: SteelMod
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -39,25 +38,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 100
       behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-    # Goob start
-    - trigger: !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          SheetSteel1:
-            min: 1
-            max: 2
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalSlam
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-    # Goob end
+          collection: MetalBreak
+          params:
+            volume: -4
   - type: Construction
     graph: Airlock
     node: assembly
