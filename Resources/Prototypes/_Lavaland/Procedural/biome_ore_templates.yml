@@ -3,7 +3,6 @@
   entityMask:
     AsteroidRock: AsteroidRockGibtonite
     WallRock: WallRockGibtonite
-    WallRockBasalt: WallRockBasaltGibtonite
     WallRockChromite: WallRockChromiteGibtonite
     WallRockSand: WallRockSandGibtonite
     WallRockSnow: WallRockSnowGibtonite

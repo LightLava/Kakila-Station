@@ -48,7 +48,7 @@
   - EnergySwordDoubleRed
   storage:
     back:
-    - BoxSurvivalSlotsSyndicate
+    - BoxSurvivalSyndicate
 
 - type: startingGear
   id: ChosenOneProtagGear
@@ -104,7 +104,7 @@
     - ClothingNeckStoleChaplain
     - ClothingHeadHatHoodVoidCloak
     - ClothingOuterHoodieChaplain
-    - BoxSurvivalSlots
+    - BoxSurvival
 
 - type: startingGear
   id: VoxRaiderAntagGear
@@ -120,7 +120,7 @@
     back: ClothingBackpack
   storage:
     back:
-    - BoxSurvivalSlotsNitrogen
+    - BoxSurvivalNitrogen
     - ExtendedEmergencyNitrogenTankFilled
     - ChameleonProjector
     - DartGun

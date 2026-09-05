@@ -5437,7 +5437,7 @@ entities:
     - type: Transform
       pos: 18.5,1.5
       parent: 1
-- proto: WallRockBasalt
+- proto: WallRock
   entities:
   - uid: 799
     components:

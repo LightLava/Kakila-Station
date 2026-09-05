@@ -58,7 +58,7 @@
     proto: OxygenBreather
   storage:
     back:
-    - BoxSurvivalSlots # Goobstation - Slots Based Survival Boxes
+    - BoxSurvival
 
 - type: loadout
   id: EmergencyNitrogen
@@ -67,7 +67,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxSurvivalSlotsNitrogen # Goobstation - Slots Based Survival Boxes
+    - BoxSurvivalNitrogen
 
 # Clown
 - type: loadout
@@ -77,7 +77,7 @@
     proto: OxygenBreather
   storage:
     back:
-    - BoxHugSlots # Goobstation - Slots Based Survival Boxes
+    - BoxHug
 
 - type: loadout
   id: EmergencyNitrogenClown
@@ -86,7 +86,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxHugSlotsNitrogen # Goobstation - Slots Based Survival Boxes
+    - BoxHugNitrogen
 
 # Mime
 - type: loadoutEffectGroup
@@ -125,7 +125,7 @@
     proto: OxygenBreatherMime
   storage:
     back:
-    - BoxMimeSlots # Goobstation - Slots Based Survival Boxes
+    - BoxMime
 
 - type: loadout
   id: EmergencyNitrogenMime
@@ -134,7 +134,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxMimeSlotsNitrogen # Goobstation - Slots Based Survival Boxes
+    - BoxMimeNitrogen
 
 - type: loadout
   id: EmergencySpeciesMothMime
@@ -143,7 +143,7 @@
     proto: OxygenBreatherMimeMoth
   storage:
     back:
-    - BoxMimeMothSlots # Goobstation - Slots Bases Survival Boxes
+    - BoxMimeMoth # Goobstation -  Bases Survival Boxes
 
 # Engineering / Extended
 - type: loadout
@@ -153,7 +153,7 @@
     proto: OxygenBreather
   storage:
     back:
-    - BoxSurvivalSlotsEngineering # Goobstation - Slots Based Survival Boxes
+    - BoxSurvivalEngineering
 
 - type: loadout
   id: EmergencyNitrogenExtended
@@ -162,7 +162,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxSurvivalSlotsEngineeringNitrogen # Goobstation - Slots Based Survival Boxes
+    - BoxSurvivalEngineeringNitrogen
 
 # Medical
 - type: loadout
@@ -172,7 +172,7 @@
     proto: OxygenBreather
   storage:
     back:
-    - BoxSurvivalSlotsMedical # Goobstation - Slots Based Survival Boxes
+    - BoxSurvivalMedical
 
 - type: loadout
   id: EmergencyNitrogenMedical
@@ -181,7 +181,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxSurvivalSlotsMedicalNitrogen # Goobstation - Slots Based Survival Boxes
+    - BoxSurvivalMedicalNitrogen
 
 # Security
 - type: loadout
@@ -191,7 +191,7 @@
     proto: OxygenBreather
   storage:
     back:
-    - BoxSurvivalSlotsSecurity # Goobstation - Slots Based Survival Boxes
+    - BoxSurvivalSecurity
 
 - type: loadout
   id: EmergencyNitrogenSecurity
@@ -200,7 +200,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxSurvivalSlotsSecurityNitrogen # Goobstation - Slots Based Survival Boxes
+    - BoxSurvivalSecurityNitrogen
 
 # Syndicate
 - type: loadout
@@ -210,7 +210,7 @@
     proto: OxygenBreather
   storage:
     back:
-    - BoxSurvivalSlotsSyndicate # Goobstation - Slots Based Survival Boxes
+    - BoxSurvivalSyndicate
 
 - type: loadout
   id: EmergencyNitrogenSyndicate
@@ -219,7 +219,7 @@
     proto: NitrogenBreather
   storage:
     back:
-    - BoxSurvivalSlotsSyndicateNitrogen # Goobstation - Slots Based Survival Boxes
+    - BoxSurvivalSyndicateNitrogen
 
 # Military / Double Extended
 - type: loadout
@@ -231,7 +231,7 @@
  #   pocket1: DoubleEmergencyOxygenTankFilled
   storage:
     back:
-    - BoxSurvivalSlotsEngineering # Goobstation
+    - BoxSurvivalEngineering
 
 - type: loadout
   id: EmergencyNitrogenMilitaryDouble
@@ -242,7 +242,7 @@
   #  pocket1: DoubleEmergencyNitrogenTankFilled
   storage:
     back:
-    - BoxSurvivalSlotsEngineeringNitrogen # Goobstation
+    - BoxSurvivalEngineeringNitrogen
 
 # Pre-equipped species gear
 

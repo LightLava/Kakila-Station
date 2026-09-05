@@ -1,5 +1,3 @@
-# SPDX-License-Identifier: AGPL-3.0-or-later
-#Cult outfit startingGear definitions.
 - type: startingGear
   id: CultLeaderGear
   equipment:
@@ -13,7 +11,7 @@
     ears: ClothingHeadsetService
   storage:
     back:
-    - BoxSurvivalSlots # Goobstation - Slots Based Survival Boxes
+    - BoxSurvival
 
 - type: startingGear
   id: CultistGear
@@ -27,4 +25,4 @@
     ears: ClothingHeadsetService
   storage:
     back:
-    - BoxSurvivalSlots # Goobstation - Slots Based Survival Boxes
+    - BoxSurvival

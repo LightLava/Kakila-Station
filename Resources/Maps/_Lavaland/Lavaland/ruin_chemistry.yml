@@ -1014,7 +1014,7 @@ entities:
     - type: Transform
       pos: 7.5,10.5
       parent: 1
-- proto: WallRockBasalt
+- proto: WallRock
   entities:
   - uid: 114
     components:

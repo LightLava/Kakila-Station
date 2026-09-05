@@ -2463,7 +2463,7 @@ entities:
     - type: Transform
       pos: 0.5,13.5
       parent: 1
-- proto: WallRockBasalt
+- proto: WallRock
   entities:
   - uid: 430
     components:
@@ -2540,7 +2540,7 @@ entities:
     - type: Transform
       pos: 14.5,7.5
       parent: 1
-- proto: WallRockBasaltArtifactFragment
+- proto: WallRockArtifactFragment
   entities:
   - uid: 445
     components:
@@ -2552,14 +2552,14 @@ entities:
     - type: Transform
       pos: 13.5,7.5
       parent: 1
-- proto: WallRockBasaltDiamond
+- proto: WallRockDiamond
   entities:
   - uid: 447
     components:
     - type: Transform
       pos: 2.5,20.5
       parent: 1
-- proto: WallRockBasaltGold
+- proto: WallRockGold
   entities:
   - uid: 448
     components:
@@ -2586,7 +2586,7 @@ entities:
     - type: Transform
       pos: 0.5,6.5
       parent: 1
-- proto: WallRockBasaltPlasma
+- proto: WallRockPlasma
   entities:
   - uid: 453
     components:
@@ -2628,7 +2628,7 @@ entities:
     - type: Transform
       pos: 6.5,13.5
       parent: 1
-- proto: WallRockBasaltUranium
+- proto: WallRockUranium
   entities:
   - uid: 461
     components:

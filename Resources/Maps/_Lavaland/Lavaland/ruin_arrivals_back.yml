@@ -680,7 +680,7 @@ entities:
     - type: Transform
       pos: -2.5,1.5
       parent: 1
-- proto: WallRockBasalt
+- proto: WallRock
   entities:
   - uid: 83
     components:
@@ -867,7 +867,7 @@ entities:
     - type: Transform
       pos: 0.5,2.5
       parent: 1
-- proto: WallRockBasaltSalt
+- proto: WallRockSalt
   entities:
   - uid: 120
     components:

@@ -23,189 +23,46 @@
 # Ore veins
 - type: entity
   id: MeteorRockCoal
-  parent: MeteorRock
+  parent: [ BaseVeinCoal, MeteorRock ]
   suffix: Coal
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreCoal
-    - type: Sprite
-      layers:
-        - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
-        - state: rock_coal
 
 - type: entity
   id: MeteorRockGold
-  parent: MeteorRock
+  parent: [ BaseVeinGold, MeteorRock ]
   suffix: Gold
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreGold
-    - type: Sprite
-      layers:
-        - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
-        - state: rock_gold
 
 - type: entity
   id: MeteorRockDiamond
-  parent: MeteorRock
+  parent: [ BaseVeinDiamond, MeteorRock ]
   suffix: Diamond
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreDiamond
-    - type: Sprite
-      layers:
-        - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
-        - state: rock_diamond
 
 - type: entity
   id: MeteorRockPlasma
-  parent: MeteorRock
+  parent: [ BaseVeinPlasma, MeteorRock ]
   suffix: Plasma
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OrePlasma
-    - type: Sprite
-      layers:
-        - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
-        - state: rock_phoron
 
 - type: entity
   id: MeteorRockQuartz
-  parent: MeteorRock
+  parent: [ BaseVeinQuartz, MeteorRock ]
   suffix: Quartz
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreSpaceQuartz
-    - type: Sprite
-      layers:
-        - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
-        - state: rock_quartz
 
 - type: entity
   id: MeteorRockSilver
-  parent: MeteorRock
+  parent: [ BaseVeinSilver, MeteorRock ]
   suffix: Silver
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreSilver
-    - type: Sprite
-      layers:
-        - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
-        - state: rock_silver
+
 # Tin name is a holdover from the asteroid.yml prototype.
 - type: entity
   id: MeteorRockTin
-  parent: MeteorRock
+  parent: [ BaseVeinSteel, MeteorRock ]
   suffix: Iron
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreSteel
-    - type: Sprite
-      layers:
-        - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
-        - state: rock_tin
 
 - type: entity
   id: MeteorRockUranium
-  parent: MeteorRock
+  parent: [ BaseVeinUranium, MeteorRock ]
   suffix: Uranium
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreUranium
-    - type: Sprite
-      layers:
-        - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
-        - state: rock_uranium
 
 - type: entity
   id: MeteorRockBananium
-  parent: MeteorRock
+  parent: [ BaseVeinBananium, MeteorRock ]
   suffix: Bananium
-  components:
-    - type: OreVein
-      oreChance: 1.0
-      currentOre: OreBananium
-    - type: Sprite
-      layers:
-        - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
-        - state: rock_bananium
