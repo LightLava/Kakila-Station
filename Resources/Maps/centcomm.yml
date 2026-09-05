@@ -36383,7 +36383,7 @@ entities:
     - type: Transform
       pos: -14.5,19.5
       parent: 1668
-- proto: Turnstile
+- proto: EnergyGate
   entities:
   - uid: 163
     components:
@@ -36397,7 +36397,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 8.5,0.5
       parent: 1668
-- proto: TurnstileGenpopEnter
+- proto: EnergyGateGenpopEnter
   entities:
   - uid: 6729
     components:

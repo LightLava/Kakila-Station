@@ -139229,7 +139229,7 @@ entities:
     - type: Transform
       pos: 169.501,132.5531
       parent: 1
-- proto: TurnstileGenpopEnter
+- proto: EnergyGateGenpopEnter
   entities:
   - uid: 14
     components:
@@ -139237,7 +139237,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 135.5,138.5
       parent: 1
-- proto: TurnstileGenpopLeave
+- proto: EnergyGateGenpopLeave
   entities:
   - uid: 1215
     components:

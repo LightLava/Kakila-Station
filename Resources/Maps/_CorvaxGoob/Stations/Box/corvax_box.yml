@@ -198931,7 +198931,7 @@ entities:
     - type: Transform
       pos: 1.446411,38.556652
       parent: 2
-- proto: TurnstileGenpopEnter
+- proto: EnergyGateGenpopEnter
   entities:
   - uid: 2231
     components:
@@ -198942,7 +198942,7 @@ entities:
     missingComponents:
     - Damageable
     - Destructible
-- proto: TurnstileGenpopLeave
+- proto: EnergyGateGenpopLeave
   entities:
   - uid: 9508
     components:

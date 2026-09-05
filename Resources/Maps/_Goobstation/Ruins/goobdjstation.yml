@@ -9471,7 +9471,7 @@ entities:
     - type: Transform
       pos: 29.5,46.5
       parent: 2
-- proto: Turnstile
+- proto: EnergyGate
   entities:
   - uid: 509
     components:

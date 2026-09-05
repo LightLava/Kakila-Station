@@ -103142,14 +103142,14 @@ entities:
     - type: Transform
       pos: 0.51695275,34.581173
       parent: 2
-- proto: TurnstileGenpopEnter
+- proto: EnergyGateGenpopEnter
   entities:
   - uid: 2029
     components:
     - type: Transform
       pos: -9.5,-22.5
       parent: 2
-- proto: TurnstileGenpopLeave
+- proto: EnergyGateGenpopLeave
   entities:
   - uid: 2170
     components:

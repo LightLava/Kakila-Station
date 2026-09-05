@@ -9,6 +9,7 @@
     drawdepth: Doors
     layers:
     - state: security
+      map: ["Base"]
     - state: idle-security
       shader: unshaded
       map: [ "barrier" ]
@@ -69,6 +70,7 @@
   - type: Construction
     graph: EnergyGate
     node: energyGate
+  - type: DirectionalArrowIndicator
   - type: IconSmooth
     key: walls
     mode: NoSprite
@@ -109,6 +111,7 @@
   - type: Sprite
     layers:
     - state: regular
+      map: ["Base"]
     - state: idle
       shader: unshaded
       map: [ "barrier" ]

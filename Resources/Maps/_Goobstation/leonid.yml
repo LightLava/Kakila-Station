@@ -200077,7 +200077,7 @@ entities:
     - type: Transform
       pos: -4.4535184,3.6382165
       parent: 2
-- proto: Turnstile
+- proto: EnergyGate
   entities:
   - uid: 24091
     components:

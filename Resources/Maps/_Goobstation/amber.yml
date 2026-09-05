@@ -137568,7 +137568,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 25.603931,-59.354664
       parent: 2
-- proto: TurnstileGenpopEnter
+- proto: EnergyGateGenpopEnter
   entities:
   - uid: 20258
     components:
@@ -137578,7 +137578,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -31.5,-3.5
       parent: 2
-- proto: TurnstileGenpopLeave
+- proto: EnergyGateGenpopLeave
   entities:
   - uid: 20259
     components:

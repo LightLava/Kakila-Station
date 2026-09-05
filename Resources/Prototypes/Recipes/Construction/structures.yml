@@ -602,18 +602,6 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: Turnstile
-  graph: Turnstile
-  startNode: start
-  targetNode: turnstile
-  category: construction-category-structures
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-  - !type:TileNotBlocked
-
-- type: construction
   id: Shutters
   graph: Shutters
   startNode: start
@@ -1334,6 +1322,12 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
+
+- type: construction
+  parent: BaseStructureFullTileDirectional
+  id: EnergyGate
+  graph: EnergyGate
+  targetNode: energyGate
 
 - type: construction
   name: recipes-secret-door-reinforced-name

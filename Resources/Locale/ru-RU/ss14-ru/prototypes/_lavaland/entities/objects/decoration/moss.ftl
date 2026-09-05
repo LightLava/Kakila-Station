@@ -1,2 +1,2 @@
-ent-FloraMossPale = pale moss
-    .desc = A pale carpet of moss that looks disgusting and tasty at the same time.
+ent-FloraMossPale = бледный мох
+    .desc = Бледный ковёр мха, который выглядит одновременно отвратительно и аппетитно.

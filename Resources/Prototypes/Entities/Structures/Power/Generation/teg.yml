@@ -187,6 +187,12 @@
     - type: TegCirculator
     - type: StealTarget
       stealGroup: Teg
+    - type: DirectionalArrowIndicator
+      arrows:
+      - offset: 0, -1.5
+        arrowType: BlueDirectionalArrowIndicator
+      - offset: 0, 0
+        arrowType: BlueDirectionalArrowIndicator
 
 - # Spawned by the client-side circulator examine code to indicate the inlet/outlet direction.
   type: entity

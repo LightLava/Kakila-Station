@@ -50121,7 +50121,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: TurnstileGenpopEnter
+- proto: EnergyGateGenpopEnter
   entities:
   - uid: 5386
     components:
@@ -50135,7 +50135,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 0.5,20.5
       parent: 2
-- proto: TurnstileGenpopLeave
+- proto: EnergyGateGenpopLeave
   entities:
   - uid: 5388
     components:
