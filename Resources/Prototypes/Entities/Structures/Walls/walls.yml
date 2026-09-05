@@ -1546,10 +1546,6 @@
   - type: IconSmooth
     key: walls
     base: mining
-  - type: RandomIconSmooth
-    randomStates:
-    - mining
-    - miningB
   - type: Appearance
   - type: RustRequiresPathStage # Goobstation
     pathStage: 7 # Toxic blade
