@@ -1,0 +1,4 @@
+- type: aqSetting
+  id:  SS14
+  weight: 10
+  name: "Space-Station-14"

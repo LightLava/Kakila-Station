@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+using Content.Shared.Aquila.Settings; // AQUILA
 using System.IO;
 using System.Linq;
 using System.Numerics;
@@ -105,6 +106,8 @@ namespace Content.Client.Lobby.UI
         private List<(string, RequirementsSelector)> _jobPriorities = new();
 
         private readonly Dictionary<string, BoxContainer> _jobCategories;
+
+        private readonly Dictionary<string, BoxContainer> _settingCategories;
 
         private Direction _previewRotation = Direction.North;
 
@@ -454,6 +457,8 @@ namespace Content.Client.Lobby.UI
             };
 
             _jobCategories = new Dictionary<string, BoxContainer>();
+
+            _settingCategories = new Dictionary<string, BoxContainer>(); // Aquila
 
             RefreshAntags();
             RefreshJobs();
@@ -980,6 +985,7 @@ namespace Content.Client.Lobby.UI
             JobList.RemoveAllChildren();
             _jobCategories.Clear();
             _jobPriorities.Clear();
+            _settingCategories.Clear(); //AQUILA
             var firstCategory = true;
 
             // Get all displayed departments
@@ -994,6 +1000,15 @@ namespace Content.Client.Lobby.UI
 
             departments.Sort(DepartmentUIComparer.Instance);
 
+            var settings = new List<AqSettingPrototype>();
+            foreach (var setting in _prototypeManager.EnumeratePrototypes<AqSettingPrototype>())
+            {
+                settings.Add(setting);
+            }
+
+            settings.Sort(SettingUIComparer.Instance);
+
+
             var items = new[]
             {
                 ("humanoid-profile-editor-job-priority-never-button", (int) JobPriority.Never),
@@ -1001,6 +1016,37 @@ namespace Content.Client.Lobby.UI
                 ("humanoid-profile-editor-job-priority-medium-button", (int) JobPriority.Medium),
                 ("humanoid-profile-editor-job-priority-high-button", (int) JobPriority.High),
             };
+
+            foreach (var setting in settings)
+            {
+                var settingName = Loc.GetString(setting.Name);
+
+                if (!_settingCategories.TryGetValue(setting.ID, out var settingCategory))
+                {
+                    settingCategory = new BoxContainer
+                    {
+                        Orientation = LayoutOrientation.Vertical,
+                        Name = setting.ID
+                    };
+
+                    settingCategory.AddChild(new PanelContainer
+                    {
+                        PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#464966") },
+                        Children =
+                        {
+                            new Label
+                            {
+                                Text = Loc.GetString(settingName),
+                                Margin = new Thickness(0, 12, 0, 0),
+                                StyleClasses = { StyleClass.LabelHeading }
+                            }
+                        }
+                    });
+
+                    _settingCategories[setting.ID] = settingCategory;
+                    JobList.AddChild(settingCategory);
+                }
+            }
 
             foreach (var department in departments)
             {
@@ -1043,7 +1089,8 @@ namespace Content.Client.Lobby.UI
                     });
 
                     _jobCategories[department.ID] = category;
-                    JobList.AddChild(category);
+                    
+                    _settingCategories[department.Setting].AddChild(category);
                 }
 
                 var jobs = department.Roles.Select(jobId => _prototypeManager.Index(jobId))

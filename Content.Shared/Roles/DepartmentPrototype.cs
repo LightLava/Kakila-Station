@@ -11,6 +11,12 @@ public sealed partial class DepartmentPrototype : IPrototype
     public string ID { get; private set; } = string.Empty;
 
     /// <summary>
+    /// Имя сеттинга к которому принадлежит департамент
+    /// </summary>
+    [DataField]
+    public LocId Setting = "SS14";
+
+    /// <summary>
     /// The name LocId of the department that will be displayed in the various menus.
     /// </summary>
     [DataField(required: true)]

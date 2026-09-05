@@ -1,68 +1,98 @@
-# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-#
-# SPDX-License-Identifier: AGPL-3.0-or-later
+[log]
+path = "logs"
+format = "log_%(date)s-%(time)s.txt"
+level = 2
+enabled = false
+
+[net]
+tickrate = 30
+max_connections = 2000
+lidgren_log_warning = false
+lidgren_log_error = false
+log_late_msg = false
 
 [game]
-# Straight in-game baby
-lobbyenabled = false
-# Dev map for faster loading & convenience
-map = "Dev"
+hostname = "Акила | Играем метакомпашкой"
+desc = "яндекс верните 450 рублей!!1!"
+max_players = 35
+maxcharacterslots = 25
+round_end_pvs_overrides = false
+round_restart_time = 40
+defaultmap = "AquilaLoop"
 role_timers = false
-admin_job_tracking = true
-role_loadout_timers = false
-
-[events]
-enabled = false
-
-[ghost]
-role_time = 0.5
-quick_lottery = true
-
-[gateway]
-generator_enabled = false
+role_whitelist = false
+fallbackpreset = "Extended"
+defaultpreset = "Extended"
+map_rotation = true
+contraband_examine = false
+map_pool = "SS14MapPool"
+map_memory_depth = 1
+timermap = 60.0
+timerrestart = 60.0
+timeralone = 60.0
+timerpreset = 40.0
 
 [movement]
-mob_pushing = true
-
-[physics]
-# Makes mapping annoying
-grid_splitting = false
-
-[procgen]
-preload = false
-
-[salvage]
-expedition_cooldown = 30.0
+mob_pushing = 1
 
 [shuttle]
-grid_fill = false
-auto_call_time = 0
-emergency = false
-arrivals = false
-preload_grids = false
+emergency_early_launch_allowed = 1
+
+[worldgen]
+enabled = 1
 
 [admin]
-see_own_notes = true
-new_player_threshold = 120
+see_own_notes = 1
+deadmin_on_join = 1
+bypass_max_players = 1
 
-[lavaland] # Lavaland Change
-enabled = false
+[console]
+login_host_user = "GoobStation"
+loginlocal = true
 
-[heretic] # Goobstation
-ascension_requires_objectives = false
+[auth]
+mode = 1
+
+[vote]
+restart_required_ratio = 0.7
+restart_enabled = false
+restart_ghost_percentage = 0
+map_enabled = true
+preset_enabled = true
+
+[chat]
+show_typing_indicator = true
 
 [ic]
-random_characters = false
-random_species_weights = ""
-ssd_sleep_time = 3600
+punctuation = true
+flavor_text = true
+
+[ban]
+hardware_ids = true
+
+[rmc]
+patron_lobby_message_time_seconds = 10
+
+[lavaland]
+enabled = true
+
+[queue]
+enabled = true
+
+[voice]
+barks_enabled = true
+
+[biomass]
+easy_mode = false
+
+[rules]
+time = 5.0
+
+[thunderdome]
+enabled = false
+
+[whitelist]
+enabled = true
+
+[server]
+rules_file = "AQRules"

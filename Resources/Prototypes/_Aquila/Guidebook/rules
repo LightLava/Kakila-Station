@@ -1,0 +1,6 @@
+- type: guideEntry
+  id: AQRules
+  name: Правила сервера
+  priority: 0
+  ruleEntry: true
+  text: "/ServerInfo/_Aquila/Guidebook/ServerRules/ServerRules.xml"

@@ -1,13 +1,13 @@
-- type: guideEntry
-  id: CorporateLaw
-  name: guide-entry-corporate-law
-  text: "/ServerInfo/_CorvaxGoob/Guidebook/CorporateLaw/CorporateLaw.xml"
-  children:
-  - CLOPRS
-  - CLCrimeList
-  - CLPunishments
-  - CLModificators
-  - CLMisc
+#- type: guideEntry - AQUILA
+#  id: CorporateLaw
+#  name: guide-entry-corporate-law
+#  text: "/ServerInfo/_CorvaxGoob/Guidebook/CorporateLaw/CorporateLaw.xml"
+#  children:
+#  - CLOPRS
+#  - CLCrimeList
+#  - CLPunishments
+#  - CLModificators
+#  - CLMisc
 
 - type: guideEntry
   id: CLOPRS
