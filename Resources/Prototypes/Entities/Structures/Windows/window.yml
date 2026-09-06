@@ -115,6 +115,14 @@
   - type: StaticPrice
     price: 70
 
+- type: entity # Goob
+  parent: TintedWindow
+  id: TintedWindowTransparent
+  suffix: Transparent
+  components:
+  - type: Occluder
+    enabled: false
+
 - type: entity
   abstract: true
   id: BaseRCDResistant
