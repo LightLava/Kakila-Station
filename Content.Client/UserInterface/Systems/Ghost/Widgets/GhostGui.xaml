@@ -1,4 +1,4 @@
-<!-- <!--
+<!--
 SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
@@ -13,4 +13,4 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         <!-- CorvaxGoob - Ghost Bar -->
         <Button Name="ThunderdomeButton" Text="{Loc thunderdome-ghost-button-default}" />
     </BoxContainer>
-</widgets:GhostGui> -->
+</widgets:GhostGui>
