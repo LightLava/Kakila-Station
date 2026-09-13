@@ -7,7 +7,7 @@
   playTimeTracker: JobChaplain
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 15h # 15 hours
+      time: 1h
   startingGear: ChaplainGear
   icon: "JobIconChaplain"
   supervisors: job-supervisors-hop

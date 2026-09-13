@@ -7,17 +7,17 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobAtmosphericTechnician
-      time: 6h
+      time: 1h
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
       role: JobStationEngineer
-      time: 6h
+      time: 1h
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
       department: Engineering
-      time: 60h
+      time: 1h
 
 # Head
 - type: startingGear

@@ -35,10 +35,10 @@
   objective: never-shown
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 5h #5 hours
+    time: 1h
   - !type:DepartmentTimeRequirement
     department: Engineering
-    time: 15h #15 hrs
+    time: 1h
 
 - type: antag
   id: MimeGhostAntagonistGoob
@@ -47,10 +47,10 @@
   objective: never-shown
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 5h #5 hours
+    time: 1h
   - !type:RoleTimeRequirement
     role: JobMime
-    time: 1h # 1h
+    time: 1h
 
 - type: antag
   id: PassengerGhostAntagonistGoob
@@ -59,10 +59,10 @@
   objective: never-shown
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 5h #5 hours
+    time: 1h
   - !type:RoleTimeRequirement
     role: JobPassenger
-    time: 10h # 10h
+    time: 1h
 
 - type: antag
   id: BorgGhostAntagonistGoob
@@ -71,10 +71,10 @@
   objective: never-shown
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 5h #5 hours
+    time: 1h
   - !type:RoleTimeRequirement
     role: JobBorg
-    time: 1h # 1h
+    time: 1h
 
 - type: antag
   id: ClownGhostAntagonistGoob
@@ -83,7 +83,7 @@
   objective: never-shown
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 5h #5 hours
+    time: 1h
   - !type:RoleTimeRequirement
     role: JobClown
-    time: 1h # 1h
+    time: 1h

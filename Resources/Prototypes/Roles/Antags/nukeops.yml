@@ -8,10 +8,10 @@
   objective: roles-antag-nuclear-operative-objective
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 10h # 10 hours - Goobstation
+    time: 1h
   - !type:DepartmentTimeRequirement
     department: Security
-    time: 10h # 10h Goobstation
+    time: 1h
   - !type:SpeciesRequirement
     inverted: true
     species:
@@ -27,13 +27,13 @@
   objective: roles-antag-nuclear-operative-agent-objective
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 25h # 25 hours - Goobstation
+    time: 1h
   - !type:DepartmentTimeRequirement
     department: Security
-    time: 10h # 10h Goobstation
+    time: 1h
   - !type:RoleTimeRequirement
     role: JobChemist
-    time: 5h # 5h Goobstation
+    time: 1h
   - !type:SpeciesRequirement
     inverted: true
     species:
@@ -49,13 +49,13 @@
   objective: roles-antag-nuclear-operative-commander-objective
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 40h # 40 hours - Goobstation
+    time: 1h
   - !type:DepartmentTimeRequirement
     department: Security
-    time: 20h # 20h Goobstation
+    time: 1h
   - !type:DepartmentTimeRequirement
     department: Command
-    time: 10h # 10h Goobstation
+    time: 1h
 # should be changed to nukie playtime when thats tracked (wyci)
   - !type:SpeciesRequirement
     inverted: true

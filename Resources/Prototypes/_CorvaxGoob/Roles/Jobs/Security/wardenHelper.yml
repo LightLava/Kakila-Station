@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 72000 #20 hrs
+      time: 3600  #1 hour
     - !type:SpeciesRequirement # CorvaxGoob-Species
       inverted: true
       species:

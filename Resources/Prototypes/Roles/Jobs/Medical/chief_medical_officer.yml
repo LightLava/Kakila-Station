@@ -8,16 +8,16 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobChemist
-      time: 2.5h
+      time: 1h
     - !type:RoleTimeRequirement
       role: JobMedicalDoctor
-      time: 5h
+      time: 1h
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 10h
+      time: 1h
     - !type:RoleTimeRequirement  # CorvaxGoob
       role: JobSurgeon
-      time: 2h # CorvaxGoob
+      time: 1h
     - !type:SpeciesRequirement # Goob - None Felinid
       inverted: true
       species:

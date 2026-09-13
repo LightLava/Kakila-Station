@@ -7,7 +7,7 @@
   storage:
     back:
     - WelderIndustrial
-  
+
 - type: loadout
   id: EngineerWelderAdvanced
   effects:
@@ -16,7 +16,7 @@
   storage:
     back:
     - WelderIndustrialAdvanced
-    
+
 - type: loadoutEffectGroup
   id: SeniorEngineer
   effects:
@@ -24,7 +24,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Engineering
-      time: 187200 # 52 hours
+      time: 3600  #1 hour
 
 - type: loadoutEffectGroup
   id: ExpertEngineer
@@ -33,4 +33,4 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Engineering
-      time: 720000 # 200 hours
+      time: 3600  #1 hour

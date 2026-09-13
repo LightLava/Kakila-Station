@@ -13,7 +13,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobNanotrasenRepresentative
-      time: 360000 # 100 hrs
+      time: 3600 #1 hour
 
 - type: loadout
   id: NanotrasenRepresentativeTop

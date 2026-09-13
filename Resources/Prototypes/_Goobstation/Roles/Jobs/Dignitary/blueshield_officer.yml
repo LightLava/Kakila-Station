@@ -8,21 +8,21 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 90000 # 25 hrs
+      time: 3600 #1 hour
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 54000 # 15 hours
+      time: 3600 #1 hour
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 108000 # CorvaxGoob 25 hrs -> 30 hrs
+      time: 3600 #1 hour
     - !type:AgeRequirement
       requiredAge: 21
     - !type:RoleTimeRequirement  # CorvaxGoob
-      role: JobSurgeon  
-      time: 7200 # CorvaxGoob 2 hrs
+      role: JobSurgeon
+      time: 3600 #1 hour
     - !type:RoleTimeRequirement  # CorvaxGoob
-      role: JobCaptain  
-      time: 7200 # CorvaxGoob 2 hrs
+      role: JobCaptain
+      time: 3600 #1 hour
     - !type:SpeciesRequirement # Goob - None Felinid
       inverted: true
       species:
@@ -64,7 +64,7 @@
   - Cargo
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, BluespaceLifelineImplant ] 
+    implants: [ MindShieldImplant, BluespaceLifelineImplant ]
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff

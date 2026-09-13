@@ -406,7 +406,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Command
-      time: 18000 # 5hr
+      time: 3600 #1 hour
   storage:
     back:
     - OffsetCaneNT
@@ -432,7 +432,7 @@
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:OverallPlaytimeRequirement
-      time: 10h # 10hr
+      time: 1h
   storage:
     back:
     - CardBoxBlack
@@ -446,7 +446,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobQuartermaster
-      time: 10h # 10hr
+      time: 1h
   storage:
     back:
     - CardBoxNanotrasen
@@ -459,7 +459,7 @@
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:OverallPlaytimeRequirement
-      time: 10h # 10hr
+      time: 1h
   storage:
     back:
     - FoodSnackLollypopWrapped
@@ -471,7 +471,7 @@
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:OverallPlaytimeRequirement
-      time: 500h # 500hr
+      time: 1h
   storage:
     back:
     - FoodSnackLollypopWrappedRainbow
@@ -484,7 +484,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 100h # 100hr
+      time: 1h
   storage:
     back:
     - FoodSnackLollypopWrappedCarp
@@ -510,7 +510,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Medical
-      time: 360000 # 100 hours
+      time: 3600 #1 hour
 # CorvaxGoob-loadouts-end.
 
 # Towels
@@ -528,7 +528,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobPassenger
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorGray
@@ -541,7 +541,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobChaplain
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorBlack
@@ -554,7 +554,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Security
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorRed
@@ -567,7 +567,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Engineering
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorOrange
@@ -580,7 +580,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Cargo
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorLightBrown
@@ -593,7 +593,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobClown
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorYellow
@@ -606,7 +606,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobLibrarian
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorDarkGreen
@@ -619,7 +619,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Civilian
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorGreen
@@ -632,7 +632,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Medical
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorLightBlue
@@ -645,7 +645,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Command
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorDarkBlue
@@ -658,7 +658,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Science
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorPurple
@@ -671,7 +671,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobLawyer
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorMaroon
@@ -684,7 +684,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobMime
-      time: 100h
+      time: 1h
   storage:
     back:
     - TowelColorMime
@@ -696,7 +696,7 @@
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:OverallPlaytimeRequirement
-      time: 500h
+      time: 1h
   storage:
     back:
     - TowelColorSilver
@@ -708,7 +708,7 @@
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:OverallPlaytimeRequirement
-      time: 1000h
+      time: 1h
   storage:
     back:
     - TowelColorGold

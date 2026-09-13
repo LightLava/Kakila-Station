@@ -7,13 +7,13 @@
   objective: roles-antag-abductor-objective
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 5h #5 hours
+    time: 1h
   - !type:DepartmentTimeRequirement
     department: Medical
-    time: 2h #2 hours
+    time: 1h
   - !type:DepartmentTimeRequirement
     department: Security
-    time: 2h #2 hours
+    time: 1h
 
 - type: antag
   id: AbductorScientistAntag
@@ -22,10 +22,10 @@
   objective: roles-antag-abductor-objective
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 5h #5 hours
+    time: 1h
   - !type:DepartmentTimeRequirement
     department: Medical
-    time: 3h #3 hours
+    time: 1h
 
 - type: antag
   id: AbductorAgentAntag
@@ -34,10 +34,10 @@
   objective: roles-antag-abductor-objective
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 5h #5 hours
+    time: 1h
   - !type:DepartmentTimeRequirement
     department: Security
-    time: 3h #3 hours
+    time: 1h
 
 - type: antag
   id: AbductorVictimAntag

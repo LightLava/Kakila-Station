@@ -5,7 +5,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobBrigmedic
-      time: 72000 # 20hr
+      time: 3600 #1 hour
   storage:
     back:
     - PlushieLizardJobBrigmedic
@@ -17,7 +17,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobShaftMiner
-      time: 72000 # 20hr
+      time: 3600 #1 hour
   storage:
     back:
     - PlushieLizardJobShaftMiner
@@ -29,7 +29,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobNanotrasenRepresentative
-      time: 72000 # 20hr
+      time: 3600 #1 hour
   storage:
     back:
     - PlushieLizardJobNanotrasenRepresentative
@@ -41,7 +41,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobBlueshieldOfficer
-      time: 72000 # 20hr
+      time: 3600 #1 hour
   storage:
     back:
     - PlushieLizardJobBlueshieldOfficer
@@ -53,7 +53,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobVirologist
-      time: 72000 # 20hr
+      time: 3600 #1 hour
   storage:
     back:
     - PlushieLizardJobVirologist

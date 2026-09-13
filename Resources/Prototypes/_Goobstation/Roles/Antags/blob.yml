@@ -9,7 +9,7 @@
   guides: [ Blob ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 5h # 5h # Goobstation-RoleTime
+    time: 1h
   - !type:SpeciesRequirement # CorvaxGoob-Species
     inverted: true
     species:

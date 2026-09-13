@@ -8,13 +8,13 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobCargoTechnician
-      time: 5h
+      time: 1h
     - !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 2.5h
+      time: 1h
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 10h
+      time: 1h
     - !type:SpeciesRequirement # Goob - None Felinid
       inverted: true
       species:

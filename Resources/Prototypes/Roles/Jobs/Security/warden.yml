@@ -8,13 +8,13 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
-      time: 5h
+      time: 1h
     - !type:RoleTimeRequirement # Goobstation
       role: JobBrigmedic
-      time: 5h
+      time: 1h
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 10h
+      time: 1h
     - !type:SpeciesRequirement # Goob - None Felinid
       inverted: true
       species:

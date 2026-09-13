@@ -8,16 +8,16 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobWarden
-      time: 6h # Goobstation CorvaxGoob 5 hrs -> 6 hrs
+      time: 1h
     - !type:RoleTimeRequirement
       role: JobDetective
-      time: 2h # knowing how to use the tools is important CorvaxGoob 1 hour -> 2 hour
+      time: 1h
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
-      time: 10h # Goobstation
+      time: 1h
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 20h # CorvaxGoob 10 hrs -> 20 hrs
+      time: 1h
     - !type:SpeciesRequirement # Goob - None Felinid
       inverted: true
       species:

@@ -7,7 +7,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobCaptain
-      time: 7200 #2 hrs
+      time: 3600 #1 hour
 
 # Playtime requirement for Druid Bible, Druidic Tablet
 - type: loadoutEffectGroup
@@ -17,7 +17,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobBotanist
-      time: 18000 #5 hrs
+      time: 3600 #1 hour
 
 # Playtime requirement for Clown Bible, Mirth of the Honkmother
 - type: loadoutEffectGroup
@@ -27,7 +27,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobClown
-      time: 18000 #5 hrs
+      time: 3600 #1 hour
 
 # Head
 - type: loadout

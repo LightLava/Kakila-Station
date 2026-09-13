@@ -9,18 +9,18 @@
   guides: [ Devil ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 30h # 30h
+    time: 1h
   - !type:DepartmentTimeRequirement
     department: Command
-    time: 5h # 5 hours
+    time: 1h
   - !type:RoleTimeRequirement
-    role: JobLawyer # CorvaxGoob; :S_trollface:
-    time: 5h # CorvaxGoob
+    role: JobLawyer
+    time: 1h
   - !type:SpeciesRequirement
     inverted: true
     species:
     - Plasmaman
-    - Abductor # CorvaxGoob-Species
+    - Abductor
 
 - type: startingGear
   id: DevilStartingGear

@@ -15,7 +15,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobCaptain
-      time: 720000 # 200 hours
+      time: 3600 # 1 hour
 
 - type: loadout
   id: Moproach
@@ -33,7 +33,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobJanitor
-      time: 720000 # 200 hours
+      time: 3600 # 1 hour
 
 - type: loadout
   id: Butterfly

@@ -10,7 +10,7 @@
   objective: never-shown
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 5h
+    time: 1h
   - !type:RoleTimeRequirement
     role: JobScientist
-    time: 5h
+    time: 1h

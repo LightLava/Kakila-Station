@@ -8,7 +8,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 10h # Goobstation
+      time: 1h
       inverted: true # stop playing intern if you're good at med!
   startingGear: MedicalInternGear
   icon: "JobIconMedicalIntern"

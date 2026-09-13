@@ -7,7 +7,7 @@
   playTimeTracker: JobLawyer
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 2.5h
+      time: 1h
     - !type:SpeciesRequirement # CorvaxGoob-Species
       inverted: true
       species:

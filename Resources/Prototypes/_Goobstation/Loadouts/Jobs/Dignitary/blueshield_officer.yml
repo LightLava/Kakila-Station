@@ -7,7 +7,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobBlueshieldOfficer
-      time: 187200
+      time: 3600 #1 hour
 
 # Goobstation - For Ensembles
 - type: loadoutEffectGroup
@@ -17,7 +17,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobBlueshieldOfficer
-      time: 360000 # 100 hrs
+      time: 3600 #1 hour
 
 # Hats
 - type: loadout

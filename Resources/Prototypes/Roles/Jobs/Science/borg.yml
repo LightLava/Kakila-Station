@@ -9,7 +9,7 @@
   requirements:
   - !type:RoleTimeRequirement
     role: JobBorg
-    time: 5h
+    time: 1h
   weight: 10
   canBeAntag: false
   #goobcoins: 40 #Goob content Corvax-Goob-coins
@@ -28,7 +28,7 @@
   playTimeTracker: JobBorg
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 10h
+      time: 1h
   canBeAntag: false
   #goobcoins: 20 #Goob content Corvax-Goob-coins
   skills: # CorvaxGoob-Skills

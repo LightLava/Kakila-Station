@@ -8,7 +8,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 72000 #20 hours
+      time: 3600 #1 hour
 
 - type: loadout
   id: MinerCloak

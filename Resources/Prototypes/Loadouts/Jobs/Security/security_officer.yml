@@ -7,12 +7,12 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobWarden
-      time: 6h
+      time: 1h
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
       department: Security
-      time: 60h
+      time: 1h
 
 - type: loadoutEffectGroup # Goobstation?
   id: VeteranOfficer
@@ -21,7 +21,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Security
-      time: 100h
+      time: 1h
 
 # Head
 - type: loadout

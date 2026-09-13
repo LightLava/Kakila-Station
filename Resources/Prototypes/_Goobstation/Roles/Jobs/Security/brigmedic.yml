@@ -8,10 +8,10 @@
   requirements:
   - !type:DepartmentTimeRequirement
     department: Medical
-    time: 18000 # 5 hrs
+    time: 3600  #1 hour
   - !type:DepartmentTimeRequirement
     department: Security
-    time: 18000 # 10 hrs
+    time: 3600  #1 hour
   - !type:SpeciesRequirement # CorvaxGoob-Species
     inverted: true
     species:

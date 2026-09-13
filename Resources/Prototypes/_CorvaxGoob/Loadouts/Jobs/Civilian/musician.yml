@@ -3,7 +3,7 @@
   id: Sunglasses
   equipment:
     eyes: ClothingEyesGlassesSunglasses
-    
+
 # Head:
 - type: loadout
   id: MusicianHelmetGolden
@@ -14,7 +14,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobMusician
-      time: 360000 #100 hours
+      time: 3600 #1 hour
 
 - type: loadout
   id: MusicianHelmetSilver
@@ -25,4 +25,4 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobMusician
-      time: 360000 #100 hours
+      time: 3600 #1 hour

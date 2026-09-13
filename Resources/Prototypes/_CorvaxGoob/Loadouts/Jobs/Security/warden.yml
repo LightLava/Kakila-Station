@@ -11,7 +11,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: SeniorWardenHat
-    
+
 - type: loadoutEffectGroup
   id: SeniorWardenHat
   effects:
@@ -19,8 +19,8 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobWarden
-      time: 187200 # 52 hours
-      
+      time: 3600 #1 hours
+
 # Backpack:
 - type: loadout
   id: WardenBackpackAlt
@@ -29,7 +29,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: SeniorWardenBackpack
-    
+
 - type: loadoutEffectGroup
   id: SeniorWardenBackpack
   effects:
@@ -37,4 +37,4 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobWarden
-      time: 187200 # 52 hours
+      time: 3600 #1 hours

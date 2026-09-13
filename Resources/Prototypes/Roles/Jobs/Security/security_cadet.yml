@@ -7,10 +7,10 @@
   playTimeTracker: JobSecurityCadet
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 10h
+      time: 1h
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 10h # Goobstation
+      time: 1h
       inverted: true # stop playing intern if you're good at security!
     - !type:SpeciesRequirement # CorvaxGoob-Species
       inverted: true

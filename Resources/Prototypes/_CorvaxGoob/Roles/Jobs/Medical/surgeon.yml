@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 54000 #15 hrs
+      time: 3600  #1 hour
   startingGear: SurgeonGear
   icon: "JobIconSurgeon"
   supervisors: job-supervisors-cmo

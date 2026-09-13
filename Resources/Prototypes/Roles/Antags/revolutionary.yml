@@ -9,7 +9,7 @@
   requirements:
   - !type:DepartmentTimeRequirement # was  - !type:OverallPlaytimeRequirement, Goob change
       department: Command
-      time: 10h # Goobstation
+      time: 1h
   - !type:SpeciesRequirement # CorvaxGoob-Species
       inverted: true
       species:

@@ -5,7 +5,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobSurgeon
-      time: 187200 # 52 hrs
+      time: 3600 #1 hour
 
 - type: loadout
   id: SurgeonScalpelLaser
