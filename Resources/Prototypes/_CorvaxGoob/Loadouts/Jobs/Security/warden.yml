@@ -19,7 +19,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobWarden
-      time: 3600 #1 hours
+      time: 3600 #1 hour
 
 # Backpack:
 - type: loadout
@@ -37,4 +37,4 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobWarden
-      time: 3600 #1 hours
+      time: 3600 #1 hour

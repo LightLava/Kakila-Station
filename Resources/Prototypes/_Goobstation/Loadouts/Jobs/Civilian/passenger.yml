@@ -6,7 +6,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobPassenger
-      time: 288000 # 80 hrs
+      time: 3600 #1 hour
 
 # Quarterzip
 - type: loadout

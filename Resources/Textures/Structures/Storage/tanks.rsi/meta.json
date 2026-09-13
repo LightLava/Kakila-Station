@@ -102,13 +102,7 @@
       "name": "highfueltank-2-7"
     },
     {
-      "name": "watercooler-2",
-	  "delays": [
-        [
-          1,
-          1
-        ]
-      ]
+      "name": "watercooler-2"
     },
     {
       "name": "watercooler-2-1"

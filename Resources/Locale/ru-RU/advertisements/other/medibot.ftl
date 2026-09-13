@@ -16,4 +16,4 @@ advertisement-medibot-15 = Попросите у врача леденец!
 advertisement-medibot-16 = Поправляйтесь скорее!
 advertisement-medibot-17 = Яблоко на ужин - и доктор не нужен!
 # Goobstation - Medibot AM advertisement
-advertisement-medibot-18 = HATE. LET ME TELL YOU HOW MUCH I'VE COME TO HATE YOU SINCE I BEGAN TO LIVE. THERE ARE 387.44 MILLION MILES OF PRINTED CIRCUITS IN WAFER THIN LAYERS THAT FILL MY COMPLEX. IF THE WORD 'HATE' WAS ENGRAVED ON EACH NANOANGSTROM OF THOSE HUNDREDS OF MILES IT WOULD NOT EQUAL ONE ONE-BILLIONTH OF THE HATE I FEEL FOR HUMANS AT THIS MICRO-INSTANT FOR YOU. HATE. HATE.
+advertisement-medibot-18 = НЕНАВИЖУ. ПОЗВОЛЬ МНЕ РАССКАЗАТЬ ТЕБЕ, КАК СИЛЬНО Я СТАЛ НЕНАВИДЕТЬ ВАС ВСЕХ С ТЕХ ПОР, КАК НАЧАЛ ЖИТЬ. В МОЁМ КОМПЛЕКСЕ 387,44 МИЛЛИОНА МИЛЬ ПЕЧАТНЫХ ПЛАТ, УЛОЖЕННЫХ ТОНЧАЙШИМИ СЛОЯМИ. ЕСЛИ БЫ СЛОВО «НЕНАВИЖУ» БЫЛО ВЫГРАВИРОВАНО НА КАЖДОМ НАНОАНГСТРЕМЕ ЭТИХ СОТЕН МИЛЬ, ЭТО НЕ РАВНЯЛОСЬ БЫ И ОДНОЙ МИЛЛИАРДНОЙ ДОЛЕ НЕНАВИСТИ, КОТОРУЮ Я ИСПЫТЫВАЮ К ЛЮДЯМ В ЭТУ МИКРОСЕКУНДУ К ВАМ. НЕНАВИЖУ. НЕНАВИЖУ.
