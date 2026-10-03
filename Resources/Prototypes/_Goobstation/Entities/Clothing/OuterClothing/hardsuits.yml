@@ -300,6 +300,8 @@
     sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/ntr_experimental.rsi
   - type: Clothing
     sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/ntr_experimental.rsi
+  - type: Item
+    size: Huge
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000

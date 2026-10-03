@@ -12,8 +12,10 @@
     state: icon
   - type: DisarmMalus
     malus: 0.5
+  # Aquila change start
   - type: UseDelay
-    delay: 5
+    delay: 3
+  # Aquila change end
   - type: Item
     heldPrefix: off
     sprite: _Goobstation/Objects/Weapons/Melee/marlen.rsi
@@ -24,10 +26,13 @@
   - type: MeleeWeapon
     animationRotation: 225
     wideAnimationRotation: -135
-    attackRate: 0.8
+    # Aquila change start
+    attackRate: 1
     damage:
       types:
-        Slash: 15
+        Blunt: 5
+        Slash: 10 
+    # Aquila change end
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: ItemSwitch
@@ -47,10 +52,13 @@
         - type: MeleeWeapon
           animationRotation: 225
           wideAnimationRotation: -135
-          attackRate: 0.8
+          # Aquila change start
+          attackRate: 1
           damage:
             types:
-              Slash: 15 # worse than the betty because its not supposed to be deadly
+              Blunt: 5
+              Slash: 10 # worse than the betty because its not supposed to be deadly
+          # Aquila change end
           soundHit:
             path: /Audio/Weapons/bladeslice.ogg
         soundStateActivate:
@@ -59,24 +67,28 @@
         sprite:
           sprite: _Goobstation/Objects/Weapons/Melee/marlen.rsi
           state: icon-on
+        # Aquila change start
         components:
         - type: HeldSpeedModifier
-          walkModifier: 0.65
-          sprintModifier: 0.65
+          walkModifier: 0.7
+          sprintModifier: 0.7
         - type: MeleeWeapon
           mustBeEquippedToUse: true # This thing shouldn't be able to attack at all but setting attackRate to 0 breaks stuff
           damage:
             types:
-              Blunt: 30
+              Blunt: 5
           soundHit:
             collection: TrayHit
+        # Aquila change end
         - type: MeleeThrowOnHit
           throwWhileOnDelay: true
           distance: 5
         - type: KnockdownOnHit
         - type: MultiHandedItem
+        # Aquila change start
         - type: StaminaDamageOnHit
-          damage: 75
+          damage: 100
+        # Aquila change end
         - type: Item
           size: Ginormous
           sprite: _Goobstation/Objects/Weapons/Melee/marlen.rsi
